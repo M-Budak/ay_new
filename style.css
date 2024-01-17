@@ -1,0 +1,666 @@
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 6px 10px;
+    background-color: var(--background-color)
+}
+
+.logo {
+    text-align: center;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.menu ul {
+    list-style: none;
+    margin: 6px;
+    padding: 0;
+    display: flex;
+}
+
+.menu li {
+    margin: 0 15px;
+    color: white;
+}
+
+/* 769 pixel ve altında iki satır olacak şekilde düzenleme */
+@media only screen and (max-width: 769px) {
+    header {
+        flex-direction: column;
+    }
+
+    .logo {
+        margin-bottom: 8px;
+    }
+
+    .menu ul {
+    display: flex;
+    justify-content: space-around;
+    padding: 0px;
+    }
+}
+
+
+/* header ends  */
+
+
+#navbar-example2 .nav-pills .nav-item a[href*="Elektrikli"] {
+    color: var(--elektrikli-color);
+    border-color: var(--elektrikli-color)
+}
+
+#navbar-example2 .nav-item .nav-link.active[href*="Elektrikli"]{
+    background-color: var(--elektrikli-color);
+    color: white;
+    border-color: white;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    transition: background-color 0.3s, color 0.3s;
+}
+
+
+.site-header {
+    border-bottom: 1px solid #ccc;
+    padding: .5em 1em;
+    display: flex;
+    justify-content: space-between;
+}
+
+.site-identity h1 {
+    font-size: 1.5em;
+    margin: .6em 0;
+    display: inline-block;
+}
+
+.site-navigation ul,
+.site-navigation li {
+    margin: 0;
+    padding: 0;
+}
+
+.site-navigation a {
+    text-decoration: none; /* Remove underline */
+    color: inherit; /* Inherit the color from the parent */
+}
+
+.site-navigation li {
+    display: inline-block;
+    margin: 1.4em 1em 1em 1em;
+}
+
+.brand .h-100:hover {
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+.brand a {
+    text-decoration: none;
+}
+
+/* renault */
+
+.home-img-kasa{
+    width: 80%;
+    display: block;
+    text-align: center;
+    margin: auto;
+    transform: scaleX(-1);
+}
+
+.card-img-top-brand {
+    object-fit: cover; 
+    height: 320px; 
+    width: 100%; 
+}
+
+.modal-card {
+    width: 180px; /* Sabit genişlik */
+    height: 180px; /* Sabit yükseklik */
+}
+
+.modal-body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-img-brand{
+    width: 50%;
+    display: block;
+    text-align: center;
+    margin: auto;
+}
+
+/* Ek CSS Stilleri */
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+a, a:visited, a:focus, a:active a:hover {
+    color: inherit;
+    text-decoration: none;
+  }
+  ul, ol{
+    list-style: none;
+  }
+
+:root {
+    --primary-color: #0a1543;
+    --secondary-color: #f5f5f5;
+    --background-color: #0a1e70;
+    --elektrikli-color:#25965a;
+}
+
+
+.genel-baslik-1{
+    font-size: 3rem;
+    font-weight: 700;
+    color: var(--primary-color);
+}
+
+.genel-baslik-2{
+    font-size: 2.5rem;
+    text-align: left;
+    margin-top: 1.5rem;
+    margin-bottom: 1.0rem;
+    font-weight: 400;
+    color: var(--primary-color);
+}
+
+.home-img-brand{
+    width: 100%;
+    display: block;
+    margin-top: 20px;
+}
+
+.home-text-brand{
+    display: flex;
+    align-items: center; /* Dikeyde ortala */
+    justify-content: center; /* Yatayda ortala */
+}
+
+.brand{
+    padding: 5px;
+    margin: 0px;
+}
+
+/* CAR BODY STARTS  */
+#navbar-example2 {
+    background-color: white;
+  }  
+
+#navbar-example2 .nav-link {
+    font-size: 22px;
+    color: var(--primary-color);
+    width: 10rem;
+    padding: 5px 15px;
+    margin: 0.3rem;
+    margin-bottom: 0.3rem;
+    border: 0.1rem solid black;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+#navbar-example2 .nav-link.active {
+    background-color: var(--primary-color);
+    color: white;
+    border-color: white;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.car-card {
+    text-align: center;
+}
+
+.carbody .card-body{
+    padding: 0.25rem 0.5rem;
+}
+
+.card-img-top {
+    object-fit: cover; 
+    height: 150px; 
+    width: 100%; 
+}
+
+/* CAR BODY ENDS  */
+
+
+/* MODEL PAGE STARTS */
+
+/* Header Starts */
+
+.button-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn-custom {
+    font-size: 22px;
+    background-color: white;
+    color: var(--primary-color);
+    border: 0.1rem solid black;
+    width: 10rem;
+    padding: 5px 15px;
+    margin: 0.3rem;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.btn-custom.active {
+    background-color: var(--primary-color);
+    color: white;
+    border-color: white;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    transition: background-color 0.3s, color 0.3s;
+}
+
+
+/* Header Ends */
+
+/* Skor Starts  */
+
+.skor{
+    display:flex;
+    flex-direction: column;
+    justify-content: center; /* Yatayda ortala */
+    align-items: center; /* Dikeyde ortala */
+    color: var(--primary-color);
+}
+
+.skor-baslik{
+    font-size: 2.5rem;
+    text-align: left;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    margin-top: -2rem;
+}
+
+.skor_number{
+    font-size: 4rem;
+}
+
+.skor_unit{
+    font-size: 2rem;
+}
+
+.skor p{
+    margin-bottom: 0rem;
+    font-size: 1rem;
+    color: var(--secondry-color);
+}
+
+.skor-puan .s_number{
+    font-size: 2rem;
+}
+
+.skor-bilgi{
+    font-size: 1rem;
+}
+
+/* Skor Ends  */
+
+/* Features Starts */
+
+.material-symbols-outlined {
+font-variation-settings:
+'FILL' 0,
+'wght' 100,
+'GRAD' 0,
+'opsz' 24;
+font-size: 54px;
+color: #8a8a8a;
+display: flex;
+align-items: center;
+justify-content: center;
+margin-bottom: 0.5rem;
+margin-top: -0.5rem;
+}
+
+.feature h4 {
+    color: #777; /* Açıklama rengi */
+    font-size: 1rem; /* Açıklama font boyutu */
+    text-align: center;
+}
+
+.feature p {
+    color: #777; /* Açıklama rengi */
+    text-align: center;
+}
+
+.f_number {
+    font-size: 1.5rem; /* Sayı font boyutu */
+    font-weight: 400; /* Sayı font ağırlığı */
+}
+
+.f_unit {
+    font-size: 1rem; /* Birim font boyutu */
+}
+
+/* Features Ends */
+
+/* Comment section Starts  */
+
+.card{
+    box-shadow: 1px 1px 1px 0px rgba(0, 0, 0, 0.10);
+    margin-bottom: 0.5rem;
+}
+
+.card-header{
+    background-color: white;
+    border: 0px;
+}
+
+.card-body{
+    padding: 0.25rem 1.25rem 1.25rem 1.25rem;
+}
+
+.yorum h4{
+    font-size: 1.25rem;
+}
+
+.card-header .card-title{
+    margin-bottom: 0.3rem;
+    color: #777;
+}
+
+.card-header .card-text{
+    color: #777;
+}
+
+/* Comment section Ends  */
+
+/* Interested section Starts  */
+
+/* Kartlara farklı arka plan renkleri eklemek için özel sınıflar oluşturuyoruz */
+
+.kart.kart-bir {
+    background: linear-gradient(132deg, #064c22 19.16%, rgba(63, 67, 44, 0.00) 100%);
+    margin-right: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.kart.kart-iki {
+    background: linear-gradient(132deg, #AA303B 20.31%, rgba(170, 48, 59, 0.10) 100%);
+    margin-right: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.kart.kart-uc {
+    background: linear-gradient(132deg, #020A2B 19.16%, rgba(63, 67, 44, 0.00) 100%);
+    margin-right: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.kart.kart-dort {
+    background: linear-gradient(132deg, #d2a607 20.31%, rgba(170, 48, 59, 0.10) 100%);
+    margin-right: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.kart {
+    max-width: 275px;
+    height: 250px;
+    border-radius: 0.5rem;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    background-blend-mode: hard-light;
+    padding-right: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.kart h3{
+    color: white;
+    padding: 0px;
+    margin-top: 0.5rem;
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+
+.kart img{
+    position: absolute; /* Görseli bağımsızca konumlandırır */
+    top: 65%; /* Dikeyde ortala */
+    left: 54%; /* Yatayda ortala */
+    transform: translate(-50%, -50%); /* Görseli merkeze taşır */
+    width: 250px; /* Görselin genişliği */
+    height: auto; /* Görselin yüksekliği */
+}
+
+/* Interested section Ends  */
+
+/* MODEL PAGE ENDS */
+
+
+
+/*
+ 
+                                                ||||||||||||||||||||||||||||||||| 
+                                                |                               |
+                                                |   SCREEN SIZE < 769 STARTS    |
+                                                |                               |
+                                                ||||||||||||||||||||||||||||||||| 
+
+*/
+
+@media only screen and (max-width: 769px) {
+
+/* CAR BODY < 769 STARTS  */
+
+.card-img-top-brand {
+    object-fit: cover; 
+    height: 180px; 
+    width: 100%; 
+}
+
+#navbar-example2 .nav-link {
+    font-size: 1.25rem;
+    color: var(--primary-color);
+    padding: 5px 15px;
+    width: fit-content;
+    margin: 0.1rem;
+    margin-bottom: 0.3rem;
+    border-radius:25px;
+    border: 0.05rem solid black;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.card-title{
+    font-size: 1rem;
+}
+
+.card-img-top {
+    object-fit: cover; /* Belirlediğiniz orana uygun şekilde sığdırma */
+    height: 90px; /* İstedğiniz yükseklik */
+    width: 100%; /* Genişliği %100 yaparak kartın içinde tam olarak görünmesini sağlar */
+}
+
+/* CAR BODY < 769 ENDS  */
+
+/* MODEL < 769 STARTS */
+
+.genel-baslik-1{
+font-size: 2rem;
+}
+    
+.genel-baslik-2{
+font-size: 1.5rem;
+margin-top: 1.0rem;
+margin-bottom: 0.75rem;
+}  
+
+/* Header Starts  */
+
+.btn-custom {
+font-size: 1rem; 
+}
+
+/* Header Ends  */
+
+/* Skor Starts  */ 
+
+.skor-baslik{
+font-size: 1.5rem;
+margin-bottom: 0.75rem;
+}
+
+.skor_number{
+font-size: 3rem;
+}
+.skor_unit{
+font-size: 1.5rem;
+}
+
+.skor p{
+margin-bottom: 0rem;
+font-size: 1rem;
+color: var(--secondry-color);
+}
+
+.skor-oy{
+margin-top: -0.75rem;
+}
+
+.skor-puan h4{
+font-size: 1rem;
+}
+
+.skor-puan .s_number{
+ font-size: 1.5rem;
+}
+
+.skor-bilgi{
+font-size: 0.75rem;
+}
+
+
+/* Skor Ends*/ 
+
+/* Feature Starts  */  
+
+.material-symbols-outlined {
+font-size: 2.75rem;
+}
+
+.feature h4{
+
+font-size: 0.9rem;
+}
+
+.f_number {
+    font-size: 1.2rem; /* Sayı font boyutu */
+    font-weight: 300; /* Sayı font ağırlığı */
+}
+
+.f_unit {
+    font-size: 0.9rem; /* Birim font boyutu */
+}
+
+/* Feature Ends */ 
+
+/* Comment Starts  */ 
+
+.yorum h4{
+    font-size: 1.05rem;
+}
+
+.yorum p{
+    font-size: 0.85rem;
+}
+
+/* Comment Ends  */ 
+
+/* interested starts  */
+
+.kart h3{
+    padding: 0px;
+    margin-top: 0.5rem;
+    font-size: 2.0rem;
+    font-weight: 600;
+}
+
+/* interested ends  */
+}
+
+/* MODEL < 769 ENDS */
+
+/* SCREEN SIZE < 769 ENDS */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*footer*/
+.column-title {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 70px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-google {
+  background: #dd4b39;
+  color: white;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+
+  footer h5 {
+    color: #ffc107;
+  }
+
+  footer ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  footer ul li {
+    margin-bottom: 8px;
+  }
+
+  footer .d-flex a {
+    font-size: 1.5rem;
+  }

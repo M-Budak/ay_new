@@ -1,0 +1,737 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <script src="https://kit.fontawesome.com/a67856db21.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="style.css">
+    <title>BMW 320i Araç Yorumu</title>
+    <script>
+        function includeHTML() {
+          var z, i, elmnt, file, xhttp;
+          /* Loop through a collection of all HTML elements: */
+          z = document.getElementsByTagName("*");
+          for (i = 0; i < z.length; i++) {
+            elmnt = z[i];
+            /*search for elements with a certain atrribute:*/
+            file = elmnt.getAttribute("w3-include-html");
+            if (file) {
+              /* Make an HTTP request using the attribute value as the file name: */
+              xhttp = new XMLHttpRequest();
+              xhttp.onreadystatechange = function() {
+                if (this.readyState == 4) {
+                  if (this.status == 200) {elmnt.innerHTML = this.responseText;}
+                  if (this.status == 404) {elmnt.innerHTML = "Page not found.";}
+                  /* Remove the attribute, and call this function once more: */
+                  elmnt.removeAttribute("w3-include-html");
+                  includeHTML();
+                }
+              }
+              xhttp.open("GET", file, true);
+              xhttp.send();
+              /* Exit the function: */
+              return;
+            }
+          }
+        }
+        </script> 
+</head>
+<body>
+<div w3-include-html="header.html"></div> 
+<div class="container">
+      
+    <!-- Header Section Starts  -->
+
+    <div class="row">
+        <!-- Küçük ekranlar için sıralı düzen -->
+        <div class="col-md-6 order-md-1 order-2">
+            <h1 class="genel-baslik-1 order-1">BMW 3 Serisi</h1>
+            <p>BMW 3 Serisi, mükemmel tasarımı ve üstün performansıyla sürüş deneyimini zirveye taşıyor. Her ayrıntısı özenle düşünülmüş olan bu otomobil, zarif bir şıklığı, teknolojik yenilikleri ve dinamik sürüşü bir araya getiriyor.</p>
+            <div class="button-container">
+                <button type="button" class="btn btn-custom" onclick="showCategory('318i')">318i</button>
+                <button type="button" class="btn btn-custom" onclick="showCategory('320i')">320i</button>
+                <button type="button" class="btn btn-custom" onclick="showCategory('320d')">320d</button>
+            </div>
+        </div>
+
+        <div class="col-md-6 order-md-2 order-1 mt-2 mb-3">
+            <img src="bmw320i.webp" alt="Görsel" class="img-fluid">
+        </div>
+    </div>
+
+    <!-- Header Section Ends  -->
+    <!-- Menu Items -->
+    <div id="menuItems" data-aos="fade-up">
+            
+        <!-- Default content (all categories) -->
+        <div class="menu-category" data-category="318i">
+
+        <!-- Skor Section Starts  -->
+
+        <div class="row mt-5">
+            <div class="col-md-6">
+                <div class="row">
+                    <div class="col-7">
+                        <h2 class="skor-baslik">Skor</h2>
+                        <p class="skor-bilgi">Bu sonuçlar kullanıcılar tarafından verilen puanların ortalamasıdır.</p>
+                    </div>
+                    <div class="skor col-5">
+                        <p>
+                            <span class="skor_number">8.8</span>
+                            <span class="skor_unit">/ 10</span>
+                        </p>
+                        <p class="skor-oy">113 Oy</p>
+                    </div>
+                </div>
+                </div>
+            <div class="skor-puan col-md-6">
+                <div class="row">
+                    <div class="col-4">
+                        <h4>Performans</h4>
+                        <p>
+                            <span class="s_number">8.8</span>
+                            <span class="s_unit">/ 10</span>
+                        </p>
+                    </div>
+                    <div class="col-4">
+                        <h4>Konfor</h4>
+                            <span class="s_number">8.8</span>
+                            <span class="s_unit">/ 10</span>
+                    </div>
+                    <div class="col-4">
+                        <h4>Tasarım</h4>
+                            <span class="s_number">8.8</span>
+                            <span class="s_unit">/ 10</span>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-4">
+                        <h4>Sürüş</h4>
+                            <span class="s_number">8.8</span>
+                            <span class="s_unit">/ 10</span>
+                    </div>
+                    <div class="col-4">
+                        <h4>Servis</h4>
+                            <span class="s_number">8.8</span>
+                            <span class="s_unit">/ 10</span>
+                    </div>
+                    <div class="col-4">
+                        <h4>Malzeme</h4>
+                            <span class="s_number">8.8</span>
+                            <span class="s_unit">/ 10</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Skor Section Ends  -->
+
+        <!-- Features Section Starts  -->
+        
+        <h2 class="genel-baslik-2">Özellikler</h2>
+
+        <div class="row">
+            <div class="feature col-3">
+                <h4>Max Hız</h4>
+                <span class="material-symbols-outlined">
+                    settings
+                </span>
+                <p>
+                    <span class="f_number">220</span>
+                    <span class="f_unit">km/s</span>
+                </p>
+            </div>
+            <div class="feature col-3">
+                <h4>0-100</h4>
+                <span class="material-symbols-outlined">
+                    avg_pace
+                </span>
+                <p>
+                    <span class="f_number">7.2</span>
+                    <span class="f_unit">s</span>
+                </p>
+            </div>
+            <div class="feature col-3">
+                <h4>Yakıt</h4>
+                <span class="material-symbols-outlined">
+                    local_gas_station
+                </span>
+                <p>
+                    <span class="f_number">Dizel</span>
+                </p>
+            </div>
+            <div class="feature col-3">
+                <h4>Beygir</h4>
+                <span class="material-symbols-outlined">
+                    bolt
+                </span>
+                <p>
+                    <span class="f_number">170</span>
+                    <span class="f_unit">hp</span>
+                </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="feature col-3">
+                <h4>Vites</h4>
+                <span class="material-symbols-outlined">
+                    auto_transmission
+                </span>
+                <p>
+                    <span class="f_number">Otomatik</span>
+                </p>
+            </div>
+            <div class="feature col-3">
+                <h4>Tork</h4>
+                <span class="material-symbols-outlined">
+                    settings
+                </span>
+                <p>
+                    <span class="f_number">250</span>
+                    <span class="f_unit">nm</span>
+                </p>
+            </div>
+            <div class="feature col-3">
+                <h4>NCAP</h4>
+                <span class="material-symbols-outlined">
+                    health_and_safety
+                </span>
+                <p>
+                    <span class="f_number">6.4</span>
+                    <span class="f_unit">lt</span>
+                </p>
+            </div>
+            <div class="feature col-3">
+                <h4>Bagaj</h4>
+                <span class="material-symbols-outlined">
+                    luggage
+                </span>
+                <p>
+                    <span class="f_number">480</span>
+                    <span class="f_unit">lt</span>
+                </p>
+            </div>
+        </div>
+
+        <!-- Features Section Ends -->
+
+        <!-- Comment Section Starts  -->
+
+        <h2 class="genel-baslik-2">Kullanıcı Yorumları</h2>
+
+        <div class="row yorum">
+                    <div class="card">
+                        <div class="card-header">
+                            <h4 class="card-title"><strong>Recep Kurtuluş</strong> -  2022 BMW 320i First Edition M Sport</h4>
+                            <p class="card-text">24.10.2023 / 2 Yıllık Kullanıcı</p>
+                        </div>
+                        <div class="card-body">
+                            <p class="card-text">Performans açısından BMW 320 kesinlikle etkileyici. Motor gücü, hızlanma ve yol tutuş beklentilerimi fazlasıyla karşıladı. Özellikle spor modunda sürüş yaparken otomobil gerçekten canlı ve eğlenceli. Yakıt verimliliği de şaşırtıcı derecede iyidir. Hem şehir içi hem de uzun yolculuklarda tasarruflu bir şekilde ilerleyebiliyor.</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header">
+                            <h4 class="card-title"><strong>Recep Kurtuluş</strong> -  2022 BMW 320i First Edition M Sport</h4>
+                            <p class="card-text">24.10.2023 / 2 Yıllık Kullanıcı</p>
+                        </div>
+                        <div class="card-body">
+                            <p class="card-text">Performans açısından BMW 320 kesinlikle etkileyici. Motor gücü, hızlanma ve yol tutuş beklentilerimi fazlasıyla karşıladı. Özellikle spor modunda sürüş yaparken otomobil gerçekten canlı ve eğlenceli. Yakıt verimliliği de şaşırtıcı derecede iyidir. Hem şehir içi hem de uzun yolculuklarda tasarruflu bir şekilde ilerleyebiliyor.</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header">
+                            <h4 class="card-title"><strong>Recep Kurtuluş</strong> -  2022 BMW 320i First Edition M Sport</h4>
+                            <p class="card-text">24.10.2023 / 2 Yıllık Kullanıcı</p>
+                        </div>
+                        <div class="card-body">
+                            <p class="card-text">Performans açısından BMW 320 kesinlikle etkileyici. Motor gücü, hızlanma ve yol tutuş beklentilerimi fazlasıyla karşıladı. Özellikle spor modunda sürüş yaparken otomobil gerçekten canlı ve eğlenceli. Yakıt verimliliği de şaşırtıcı derecede iyidir. Hem şehir içi hem de uzun yolculuklarda tasarruflu bir şekilde ilerleyebiliyor.</p>
+                        </div>
+                    </div>
+        </div>
+
+        <!-- Interested section Starts -->
+
+        <h2 class="genel-baslik-2">Farklı Araçlara Göz At</h2>
+
+        <div class="row interested justify-content-center">
+            <div class="kart kart-bir col-12 col-md-4">
+                <h3>Mercedes<br>C200</h3>
+                <img src="car1.webp" alt="">
+            </div>
+            <div class="kart kart-iki col-12 col-md-4">
+                <h3>Volvo<br>S60</h3>
+                <img src="car2.webp" alt="">
+            </div>
+            <div class="kart kart-uc col-12 col-md-4">
+                <h3>Audi<br>A6</h3>
+                <img src="car3.webp" alt="">
+            </div>
+            <div class="kart kart-dort col-12 col-md-4">
+                <h3>Mercedes<br>C200</h3>
+                <img src="car1.webp" alt="">
+            </div>
+        </div>
+
+        </div>
+
+        <div class="menu-category" data-category="320i" style="display: none;">
+
+            <!-- Skor Section Starts  -->
+    
+            <div class="row mt-5">
+                <div class="col-md-6">
+                    <div class="row">
+                        <div class="col-7">
+                            <h2 class="skor-baslik">Skor</h2>
+                            <p class="skor-bilgi">Bu sonuçlar kullanıcılar tarafından verilen puanların ortalamasıdır.</p>
+                        </div>
+                        <div class="skor col-5">
+                            <p>
+                                <span class="skor_number">7.1</span>
+                                <span class="skor_unit">/ 10</span>
+                            </p>
+                            <p class="skor-oy">171 Oy</p>
+                        </div>
+                    </div>
+                    </div>
+                <div class="skor-puan col-md-6">
+                    <div class="row">
+                        <div class="col-4">
+                            <h4>Performans</h4>
+                            <p>
+                                <span class="s_number">7.7</span>
+                                <span class="s_unit">/ 10</span>
+                            </p>
+                        </div>
+                        <div class="col-4">
+                            <h4>Konfor</h4>
+                                <span class="s_number">7.7</span>
+                                <span class="s_unit">/ 10</span>
+                        </div>
+                        <div class="col-4">
+                            <h4>Tasarım</h4>
+                                <span class="s_number">7.7</span>
+                                <span class="s_unit">/ 10</span>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-4">
+                            <h4>Sürüş</h4>
+                                <span class="s_number">7.7</span>
+                                <span class="s_unit">/ 10</span>
+                        </div>
+                        <div class="col-4">
+                            <h4>Servis</h4>
+                                <span class="s_number">7.7</span>
+                                <span class="s_unit">/ 10</span>
+                        </div>
+                        <div class="col-4">
+                            <h4>Malzeme</h4>
+                                <span class="s_number">7.7</span>
+                                <span class="s_unit">/ 10</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Skor Section Ends  -->
+    
+            <!-- Features Section Starts  -->
+            
+            <h2 class="genel-baslik-2">Özellikler</h2>
+    
+            <div class="row">
+                <div class="feature col-3">
+                    <h4>Max Hız</h4>
+                    <span class="material-symbols-outlined">
+                        settings
+                    </span>
+                    <p>
+                        <span class="f_number">200</span>
+                        <span class="f_unit">km/s</span>
+                    </p>
+                </div>
+                <div class="feature col-3">
+                    <h4>0-100</h4>
+                    <span class="material-symbols-outlined">
+                        avg_pace
+                    </span>
+                    <p>
+                        <span class="f_number">7.6</span>
+                        <span class="f_unit">s</span>
+                    </p>
+                </div>
+                <div class="feature col-3">
+                    <h4>Yakıt</h4>
+                    <span class="material-symbols-outlined">
+                        local_gas_station
+                    </span>
+                    <p>
+                        <span class="f_number">Benzinli</span>
+                    </p>
+                </div>
+                <div class="feature col-3">
+                    <h4>Beygir</h4>
+                    <span class="material-symbols-outlined">
+                        bolt
+                    </span>
+                    <p>
+                        <span class="f_number">185</span>
+                        <span class="f_unit">hp</span>
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="feature col-3">
+                    <h4>Vites</h4>
+                    <span class="material-symbols-outlined">
+                        auto_transmission
+                    </span>
+                    <p>
+                        <span class="f_number">Manuel</span>
+                    </p>
+                </div>
+                <div class="feature col-3">
+                    <h4>Tork</h4>
+                    <span class="material-symbols-outlined">
+                        settings
+                    </span>
+                    <p>
+                        <span class="f_number">265</span>
+                        <span class="f_unit">nm</span>
+                    </p>
+                </div>
+                <div class="feature col-3">
+                    <h4>NCAP</h4>
+                    <span class="material-symbols-outlined">
+                        health_and_safety
+                    </span>
+                    <p>
+                        <span class="f_number">6.8</span>
+                        <span class="f_unit">lt</span>
+                    </p>
+                </div>
+                <div class="feature col-3">
+                    <h4>Bagaj</h4>
+                    <span class="material-symbols-outlined">
+                        luggage
+                    </span>
+                    <p>
+                        <span class="f_number">460</span>
+                        <span class="f_unit">lt</span>
+                    </p>
+                </div>
+            </div>
+    
+            <!-- Features Section Ends -->
+    
+            <!-- Comment Section Starts  -->
+    
+            <h2 class="genel-baslik-2">Kullanıcı Yorumları</h2>
+    
+            <div class="row yorum">
+                        <div class="card">
+                            <div class="card-header">
+                                <h4 class="card-title"><strong>Osman Kara</strong> -  2022 BMW 320i First Edition M Sport</h4>
+                                <p class="card-text">24.10.2023 / 2 Yıllık Kullanıcı</p>
+                            </div>
+                            <div class="card-body">
+                                <p class="card-text">Performans açısından BMW 320 kesinlikle etkileyici. Motor gücü, hızlanma ve yol tutuş beklentilerimi fazlasıyla karşıladı. Özellikle spor modunda sürüş yaparken otomobil gerçekten canlı ve eğlenceli. Yakıt verimliliği de şaşırtıcı derecede iyidir. Hem şehir içi hem de uzun yolculuklarda tasarruflu bir şekilde ilerleyebiliyor.</p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header">
+                                <h4 class="card-title"><strong>Osman Kara</strong> -  2022 BMW 320i First Edition M Sport</h4>
+                                <p class="card-text">24.10.2023 / 2 Yıllık Kullanıcı</p>
+                            </div>
+                            <div class="card-body">
+                                <p class="card-text">Performans açısından BMW 320 kesinlikle etkileyici. Motor gücü, hızlanma ve yol tutuş beklentilerimi fazlasıyla karşıladı. Özellikle spor modunda sürüş yaparken otomobil gerçekten canlı ve eğlenceli. Yakıt verimliliği de şaşırtıcı derecede iyidir. Hem şehir içi hem de uzun yolculuklarda tasarruflu bir şekilde ilerleyebiliyor.</p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header">
+                                <h4 class="card-title"><strong>Osman Kara</strong> -  2022 BMW 320i First Edition M Sport</h4>
+                                <p class="card-text">24.10.2023 / 2 Yıllık Kullanıcı</p>
+                            </div>
+                            <div class="card-body">
+                                <p class="card-text">Performans açısından BMW 320 kesinlikle etkileyici. Motor gücü, hızlanma ve yol tutuş beklentilerimi fazlasıyla karşıladı. Özellikle spor modunda sürüş yaparken otomobil gerçekten canlı ve eğlenceli. Yakıt verimliliği de şaşırtıcı derecede iyidir. Hem şehir içi hem de uzun yolculuklarda tasarruflu bir şekilde ilerleyebiliyor.</p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header">
+                                <h4 class="card-title"><strong>Osman Kara</strong> -  2022 BMW 320i First Edition M Sport</h4>
+                                <p class="card-text">24.10.2023 / 2 Yıllık Kullanıcı</p>
+                            </div>
+                            <div class="card-body">
+                                <p class="card-text">Performans açısından BMW 320 kesinlikle etkileyici. Motor gücü, hızlanma ve yol tutuş beklentilerimi fazlasıyla karşıladı. Özellikle spor modunda sürüş yaparken otomobil gerçekten canlı ve eğlenceli. Yakıt verimliliği de şaşırtıcı derecede iyidir. Hem şehir içi hem de uzun yolculuklarda tasarruflu bir şekilde ilerleyebiliyor.</p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header">
+                                <h4 class="card-title"><strong>Osman Kara</strong> -  2022 BMW 320i First Edition M Sport</h4>
+                                <p class="card-text">24.10.2023 / 2 Yıllık Kullanıcı</p>
+                            </div>
+                            <div class="card-body">
+                                <p class="card-text">Performans açısından BMW 320 kesinlikle etkileyici. Motor gücü, hızlanma ve yol tutuş beklentilerimi fazlasıyla karşıladı. Özellikle spor modunda sürüş yaparken otomobil gerçekten canlı ve eğlenceli. Yakıt verimliliği de şaşırtıcı derecede iyidir. Hem şehir içi hem de uzun yolculuklarda tasarruflu bir şekilde ilerleyebiliyor.</p>
+                            </div>
+                        </div>
+            </div>
+    
+            <!-- Interested section Starts -->
+    
+            <h2 class="genel-baslik-2">İlgini Çekebilecek Araçlar</h2>
+    
+            <div class="row interested justify-content-center">
+                <div class="kart kart-bir col-12 col-md-4">
+                    <h3>Mercedes<br>C200</h3>
+                    <img src="car1.webp" alt="">
+                </div>
+                <div class="kart kart-iki col-12 col-md-4">
+                    <h3>Volvo<br>S60</h3>
+                    <img src="car2.webp" alt="">
+                </div>
+                <div class="kart kart-uc col-12 col-md-4">
+                    <h3>Audi<br>A6</h3>
+                    <img src="car3.webp" alt="">
+                </div>
+                <div class="kart kart-dort col-12 col-md-4">
+                    <h3>Mercedes<br>C200</h3>
+                    <img src="car1.webp" alt="">
+                </div>
+            </div>
+    
+        </div>
+
+        <div class="menu-category" data-category="320d" style="display: none;">
+
+            <!-- Skor Section Starts  -->
+    
+            <div class="row mt-5">
+                <div class="col-md-6">
+                    <div class="row">
+                        <div class="col-7">
+                            <h2 class="skor-baslik">Skor</h2>
+                            <p class="skor-bilgi">Bu sonuçlar kullanıcılar tarafından verilen puanların ortalamasıdır.</p>
+                        </div>
+                        <div class="skor col-5">
+                            <p>
+                                <span class="skor_number">6.9</span>
+                                <span class="skor_unit">/ 10</span>
+                            </p>
+                            <p class="skor-oy">113 Oy</p>
+                        </div>
+                    </div>
+                    </div>
+                <div class="skor-puan col-md-6">
+                    <div class="row">
+                        <div class="col-4">
+                            <h4>Performans</h4>
+                            <p>
+                                <span class="s_number">6.8</span>
+                                <span class="s_unit">/ 10</span>
+                            </p>
+                        </div>
+                        <div class="col-4">
+                            <h4>Konfor</h4>
+                                <span class="s_number">6.8</span>
+                                <span class="s_unit">/ 10</span>
+                        </div>
+                        <div class="col-4">
+                            <h4>Tasarım</h4>
+                                <span class="s_number">6.8</span>
+                                <span class="s_unit">/ 10</span>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-4">
+                            <h4>Sürüş</h4>
+                                <span class="s_number">6.8</span>
+                                <span class="s_unit">/ 10</span>
+                        </div>
+                        <div class="col-4">
+                            <h4>Servis</h4>
+                                <span class="s_number">6.8</span>
+                                <span class="s_unit">/ 10</span>
+                        </div>
+                        <div class="col-4">
+                            <h4>Malzeme</h4>
+                                <span class="s_number">6.8</span>
+                                <span class="s_unit">/ 10</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Skor Section Ends  -->
+    
+            <!-- Features Section Starts  -->
+            
+            <h2 class="genel-baslik-2">Özellikler</h2>
+    
+            <div class="row">
+                <div class="feature col-3">
+                    <h4>Max Hız</h4>
+                    <span class="material-symbols-outlined">
+                        settings
+                    </span>
+                    <p>
+                        <span class="f_number">205</span>
+                        <span class="f_unit">km/s</span>
+                    </p>
+                </div>
+                <div class="feature col-3">
+                    <h4>0-100</h4>
+                    <span class="material-symbols-outlined">
+                        avg_pace
+                    </span>
+                    <p>
+                        <span class="f_number">7.0</span>
+                        <span class="f_unit">s</span>
+                    </p>
+                </div>
+                <div class="feature col-3">
+                    <h4>Yakıt</h4>
+                    <span class="material-symbols-outlined">
+                        local_gas_station
+                    </span>
+                    <p>
+                        <span class="f_number">Elektrikli</span>
+                    </p>
+                </div>
+                <div class="feature col-3">
+                    <h4>Beygir</h4>
+                    <span class="material-symbols-outlined">
+                        bolt
+                    </span>
+                    <p>
+                        <span class="f_number">166</span>
+                        <span class="f_unit">hp</span>
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="feature col-3">
+                    <h4>Vites</h4>
+                    <span class="material-symbols-outlined">
+                        auto_transmission
+                    </span>
+                    <p>
+                        <span class="f_number">Otomatik</span>
+                    </p>
+                </div>
+                <div class="feature col-3">
+                    <h4>Tork</h4>
+                    <span class="material-symbols-outlined">
+                        settings
+                    </span>
+                    <p>
+                        <span class="f_number">220</span>
+                        <span class="f_unit">nm</span>
+                    </p>
+                </div>
+                <div class="feature col-3">
+                    <h4>NCAP</h4>
+                    <span class="material-symbols-outlined">
+                        health_and_safety
+                    </span>
+                    <p>
+                        <span class="f_number">6.6</span>
+                        <span class="f_unit">lt</span>
+                    </p>
+                </div>
+                <div class="feature col-3">
+                    <h4>Bagaj</h4>
+                    <span class="material-symbols-outlined">
+                        luggage
+                    </span>
+                    <p>
+                        <span class="f_number">455</span>
+                        <span class="f_unit">lt</span>
+                    </p>
+                </div>
+            </div>
+    
+            <!-- Features Section Ends -->
+    
+            <!-- Comment Section Starts  -->
+    
+            <h2 class="genel-baslik-2">Kullanıcı Yorumları</h2>
+    
+            <div class="row yorum">
+                        <div class="card">
+                            <div class="card-header">
+                                <h4 class="card-title"><strong>Burak Binay</strong> -  2022 BMW 320i First Edition M Sport</h4>
+                                <p class="card-text">24.10.2023 / 2 Yıllık Kullanıcı</p>
+                            </div>
+                            <div class="card-body">
+                                <p class="card-text">Performans açısından BMW 320 kesinlikle etkileyici. Motor gücü, hızlanma ve yol tutuş beklentilerimi fazlasıyla karşıladı. Özellikle spor modunda sürüş yaparken otomobil gerçekten canlı ve eğlenceli. Yakıt verimliliği de şaşırtıcı derecede iyidir. Hem şehir içi hem de uzun yolculuklarda tasarruflu bir şekilde ilerleyebiliyor.</p>
+                            </div>
+                        </div>
+            </div>
+    
+            <!-- Interested section Starts -->
+    
+            <h2 class="genel-baslik-2">İlgini Çekebilecek Araçlar</h2>
+    
+            <div class="row interested justify-content-center">
+                <div class="kart kart-bir col-12 col-md-4">
+                    <h3>Mercedes<br>C200</h3>
+                    <img src="car1.webp" alt="">
+                </div>
+                <div class="kart kart-iki col-12 col-md-4">
+                    <h3>Volvo<br>S60</h3>
+                    <img src="car2.webp" alt="">
+                </div>
+                <div class="kart kart-uc col-12 col-md-4">
+                    <h3>Audi<br>A6</h3>
+                    <img src="car3.webp" alt="">
+                </div>
+                <div class="kart kart-dort col-12 col-md-4">
+                    <h3>Mercedes<br>C200</h3>
+                    <img src="car1.webp" alt="">
+                </div>
+            </div>
+    
+        </div>
+    </div>
+    </div>
+    <div w3-include-html="footer.html"></div> 
+<!-- Bootstrap JavaScript ve Popper.js dosyalarını ekleyin -->
+<script src="assets/vendor/aos/aos.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<script>
+       // AOS'yi başlatın
+    document.addEventListener('DOMContentLoaded', function() {
+        AOS.init();
+    });
+
+    // Your existing JavaScript code
+    function showCategory(category) {
+        // Hide all categories
+        $('.menu-category').hide();
+
+        // Remove 'active' class from all buttons
+        $('.btn').removeClass('active');
+
+        // Show the selected category
+        $('.menu-category[data-category="' + category + '"]').show();
+
+        // Add 'active' class to the clicked button
+        $('button:contains(' + category + ')').addClass('active');
+    }
+</script>
+<script>
+    includeHTML();
+</script> 
+
+</body>
+</html>
