@@ -30,6 +30,14 @@ header {
 
 /* HEADER ENDS  */
 
+.kasa-list{
+    padding: 0.1rem 0.2rem;
+}
+.car-card:hover .card-img-top {
+    transform: scale(1.1); 
+    transition: transform 0.3s ease;
+}
+
 /* MODAL STARTS  */
 .brand .h-100:hover {
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
@@ -155,6 +163,7 @@ a, a:visited, a:focus, a:active a:hover {
 /* CAR BODY STARTS  */
 #navbar-example2 {
     background-color: white;
+    padding: 0%;
   }  
 
 #navbar-example2 .nav-link {

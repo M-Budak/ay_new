@@ -11,38 +11,9 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="stylesheet" href="style.css">
     <title>BMW 320i Araç Yorumu</title>
-    <script>
-        function includeHTML() {
-          var z, i, elmnt, file, xhttp;
-          /* Loop through a collection of all HTML elements: */
-          z = document.getElementsByTagName("*");
-          for (i = 0; i < z.length; i++) {
-            elmnt = z[i];
-            /*search for elements with a certain atrribute:*/
-            file = elmnt.getAttribute("w3-include-html");
-            if (file) {
-              /* Make an HTTP request using the attribute value as the file name: */
-              xhttp = new XMLHttpRequest();
-              xhttp.onreadystatechange = function() {
-                if (this.readyState == 4) {
-                  if (this.status == 200) {elmnt.innerHTML = this.responseText;}
-                  if (this.status == 404) {elmnt.innerHTML = "Page not found.";}
-                  /* Remove the attribute, and call this function once more: */
-                  elmnt.removeAttribute("w3-include-html");
-                  includeHTML();
-                }
-              }
-              xhttp.open("GET", file, true);
-              xhttp.send();
-              /* Exit the function: */
-              return;
-            }
-          }
-        }
-        </script> 
 </head>
 <body>
-<div w3-include-html="header.html"></div> 
+    <div id="header"></div>
 <div class="container">
       
     <!-- Header Section Starts  -->
@@ -700,7 +671,7 @@
         </div>
     </div>
     </div>
-    <div w3-include-html="footer.html"></div> 
+    <div id="footer"></div>
 <!-- Bootstrap JavaScript ve Popper.js dosyalarını ekleyin -->
 <script src="assets/vendor/aos/aos.js"></script>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
@@ -729,9 +700,7 @@
         $('button:contains(' + category + ')').addClass('active');
     }
 </script>
-<script>
-    includeHTML();
-</script> 
+<script src="include.js"></script>
 
 </body>
 </html>
