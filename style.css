@@ -10,6 +10,13 @@
     margin-right: 10px; /* Kartlar arasındaki boşluk */
 }
 
+.footer_haberler .col-12 li{
+    background-color: yellow;
+    margin-left: auto; /* Sağa yasla */
+    margin-right: 0;   /* Sağ kenara yapışık olmasını sağla */
+    width: 125%;
+}
+
 
 /* HEADER STARTS  */
 
@@ -443,6 +450,11 @@ margin-top: -0.5rem;
 @media only screen and (max-width: 769px) {
 
 /* HEADER < 769 STARTS  */
+
+.footer_haberler .col-12 li{
+    background-color: yellow;
+    width: 100%;
+}
 
 header {
     flex-direction: column;
